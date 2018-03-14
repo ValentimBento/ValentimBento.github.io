@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Epral</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="iso-8859-1">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+</head>
+<body>                                    
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Procurar:</legend>
+        <input type="text" value="Procurar no nosso WebSite&hellip;" onFocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;">
+        <input type="submit" id="sf_submit" value="ENTER">
+      </fieldset>
+    </form>
+    <style>                                                                  
+            * {
+            box-sizing: border-box;
+            }
+                           
+            body {
+                margin: 0;
+            }
+                                                                    
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+
+        .slideshow-container {
+          max-width: 5000px;
+          position: relative;
+          margin: auto;
+          background-color: white;
+          height: 510px;
+          width: 1346px;
+          margin-left: -173px;
+        }
+
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+        }
+
+        .prev {
+         right: 0;
+         border-radius: 3px 0 0 3px;
+         margin-right: 1300px;
+         }
+
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+          margin-left: 1300px;
+        }
+
+        .prev:hover, .next:hover {
+          background-color:rgba(0,0,0,0.8);
+        }
+
+        .text {
+          font-family: sans-serif;
+          font-weight: bold;
+          color: black;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: left;
+        }
+
+        .numbertext {
+          color: white;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #aaa;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+
+        .main {
+          max-width: 100px;
+          }
+
+        h3 {
+          font-size: 16px;
+          color: black;
+          text-align: center;
+          word-break: break-all;
+          }                           
+
+        h6 {
+          font-size: 16px;
+          text-align: left;
+          font-weight: bold;
+          }
+
+        .row {
+            margin: 20px 0px;
+        }
+
+        .row,
+        .row > .column {
+            padding: 10px;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 0px;
+            height: 320px;
+        }
+             
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .content {
+            background-color: white;
+            padding: 10px;
+        }
+
+        @media (max-width: 600px) {
+        .column {
+            width: 50%;
+        }
+        }
+        @media (max-width: 200px) {
+        .column {
+            width: 100%;
+        }              
+        }                
+                          
+        .parallax {
+            float: left;
+            width: 25%;
+            padding: 10px;
+            height: 200px;
+            }     
+                                    
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            } 
+                 
+        .parallax {
+            float: left;
+            width: 25%;
+            padding: 10px;
+            height: 200px;
+            }     
+                                    
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            }                                                    
+                                                        
+        .parallax {
+            background-image: url("https://ak2.picdn.net/shutterstock/videos/30810622/thumb/1.jpg");
+
+            min-height: 50px;     
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            }                                    
+                                                 
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: darkorange;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;    
+            border: none;
+            outline: none;
+            color: darkorange;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: black;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: orange;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            background-color: lightgray;
+        }
+
+        .dropdown-content a:hover {
+            background-color: gray;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        </style>
+        </head>
+        <body>
+        <div id="mySidenav" class="sidenav">
+          <div class="navbar">
+          <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/HOME%20PAGE.html">Pagina Inicial</a>
+          <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Sobre%20nos.html#">Sobre Nos</a>
+          <div class="dropdown">
+            <button class="dropbtn">Escola
+              <i class="drop drop-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Diretor.html">O Diretor</a>
+              <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Entidade%20Proprietaria.html">Entidade Proprietaria</a>
+              <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Quadro%20de%20Honra%20e%20Merito%20Escolar.html">Quadro de Honra e Merito Escolar</a>
+              <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Cursos%20em%20Funcionamento.html">Cursos em Funcionamento</a>
+              <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Corpo%20Docente.html">Corpo Docente</a>
+              <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Colaboradores.html">Colaboradores</a>
+              <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Mecanismos%20de%20Orienta%C3%A7%C3%A3o%20e%20Apoio%20Tutorial.html">Mecanismos de Orientacao e Apoio Tutorial</a>
+              <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Documentos%20Relevantes.html">Documentos Relevantes</a>
+              <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Portal%20EPRAL.html">Portal EPRAL</a>
+            </div>
+          </div>              
+          <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Documentos%20Estruturantes.html">Documentos Estruturantes</a>
+          <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Galeria%20de%20Fotos.html">Galeria</a>
+          <div class="dropdown">
+            <button class="dropbtn">Oferta Formativa 17/18 
+              <i class="drop drop-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Cursos%2020172018.html">Cursos 17/18</a>
+              <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Condi%C3%A7%C3%B5es%20da%20Candidatura.html">Condicoes da Candidatura</a>
+            </div>
+          </div>
+           <a href="http://localhost:2015">Contactos</a> 
+        </div>
+  </header>
+</div>
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container" class="clear">
+    <!-- Slider -->
+    <section id="slider" class="clear">
+      <figure><img src="http://www.fundacao-alentejo.pt/imagens/slider/des-epral.jpg" alt="">
+    </section>
+    <!-- main content -->
+    <div id="intro">
+      <section class="clear">
+        <!-- article 1 -->
+        <br>
+           <a href=""><img src="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Est%C3%A1gio/outro/epral-good-vibes.jpg" width="800" height="650" alt=""></a>
+        <table style="width:100%">
+          <tr>
+            <td>
+              <figure>
+                <a href=""><img src="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Est%C3%A1gio/logos/epral-porta.jpg" width="300" height="300" alt=""></a>
+              </figure>
+            </td>
+            <td>
+              <h6>Visita do Sr. Secretario de Estado da Educacao a Escola Profissional da Regiao Alentejo</h6>
+              <p>No proximo dia 4 de Dezembro o Secretario de estado da Educacao, Prof. Doutor joao Costa realiza uma vista de trabalho a EPRAL.
+                 O programa da visita pretende mostrar as praticas de trabalho desenvolvidas na nossa escola no ambito do projeto de autonomia e flexibilidade curricular que esta a ser implementado no presente ano letivo.
+                 A EPRAL e uma das mais de 250 escolas que integra o grupo piloto onde este modelo de ensino-aprendizagem esta a ser testado. </p>
+            </td> 
+          </tr>
+        </table>
+              <div class="row" style="font-size: 20px; text-align: center; color:white; font-weight: bold; margin-left: -173px; margin-right: -173px;">
+              <div class="parallax" style="padding-top: 30px; background-color:transparent;">
+                <p>28</p>
+                <p>Anos de Ensino</p>
+              </div>
+              <div class="parallax" style="padding-top: 30px; background-color:transparent;">
+                <p>5625</p>
+                <p>Diplomados</p>
+              </div>
+              <div class="parallax" style="padding-top: 30px; background-color:transparent;">
+                <p>75</p>
+                <p>(%) Taxa de Conclusao</p>
+              </div>
+              <div class="parallax" style="padding-top: 30px; background-color:transparent;">
+                <p>70</p>
+                <p>(%) Taxa de Empregabilidade + Prosseguimento de Estudos</p>
+              </div>
+            </div>     
+          <h1>Quadro de Honra e Merito Escolar</h1>
+        </article>
+        <article class>                                                 
+      <div class="row">
+        <div class="column">
+          <div class="content">
+            <img src="https://stg.odoo.did.decsis.cloud/web/image/1385/right%20orange.png" style="width:35%">
+            <h3>Aluno</h3>
+            <br>
+            <h6>"A EPRAL considera que o aluno e o centro da acao educativa. E o sujeito em funcao do qual a escola existe e organiza a sua atividade, e do qual se espera um total empenhamento.(...)"</h6>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+            <img src="https://stg.odoo.did.decsis.cloud/web/image/1385/right%20orange.png" style="width:35%">
+              <h3>Autonomia</h3>
+              <br>
+              <h6>"(...) a avaliacao das aprendizagens deve basear-se numa abordagem formativa e formadora, favoravel a autonomia do aluno (...)" "A EPRAL forma profissionais qualificados , tambem cidadaos conscientes, participativos e responsaveis".</h6>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+            <img src="https://stg.odoo.did.decsis.cloud/web/image/1385/right%20orange.png" style="width:35%">
+              <h3>Disponibilidade</h3>
+              <br>
+              <h6>"Os docentes da EPRAL sao titulares de qualificacoes profissionais para a docencia e manifestam a maior disponibilidade para corresponderem as solicitacaes dos alunos e para realizarem um ensino tendencialmente individualizado e dinamico, promotor de aprendizagens significativas."</h6>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+            <img src="https://stg.odoo.did.decsis.cloud/web/image/1385/right%20orange.png" style="width:35%">
+              <h3>Relacao Pedagogica</h3>
+              <br>
+              <h6>"A relacao pedagogica (de grande proximidade, amizade e respeito profissional) que os formadores da EPRAL tem conseguido manter com os alunos ao longo destes anos, representa indubitavelmente um dos tracos identitarios da escola e constitui um fator de sucesso educativo."</h6>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="https://stg.odoo.did.decsis.cloud/web/image/1385/right%20orange.png" style="width:35%">
+              <h3>Trabalho Colaborativo</h3>
+              <br>
+              <h6>" A EPRAL fomenta o dialogo cientifico e academico permanente, disciplinar e interdisciplinar, impulsionador do trabalho colaborativo, fundamental para a compreensao e o confronto com os desafios suscitados pela sociedade do conhecimento."</h6>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+            <img src="https://stg.odoo.did.decsis.cloud/web/image/1385/right%20orange.png" style="width:35%">
+            <h3>Parcerias</h3>
+            <br>
+            <h6>"A EPRAL e uma instituicao educativa dinamica, aberta a intercambios e parcerias de ambito local, nacional e internacional."
+            "(...)o contacto com o mundo do trabalho, em contextos reais, antecedendo e preparando a insercao socioprofissional dos jovens, e essencial para que os alunos possam aplicar os seus conhecimentos e competencias.(...)"</h6>
+            </div>
+          </div>                                    
+        </div>
+      </div>
+         <div>
+         <h1>Testemunhos</h1>
+         <div> 
+        <br>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 16</div>
+            <img src="https://stg.odoo.did.decsis.cloud/web/image/1397/luisilva-1-100x100.png" style=" width:25%">
+            <div class="text">Luis Silva concluiu o Curso Profissional de Tecnico de Multimedia. E atualmente Mobile Product Designer na NOVODA, em Londres. "Uma das principais diferencas que encontrei enquanto aluno da PERAL foi a possibilidade de utilizar a teoria combinada com a pratica. Esta metodologia fez com quem eu me interessasse pela area profissional onde hoje estou inserido." "A EPRAL, contrariamente as outras escolas, ajudou-me a escolher e a seguir uma carreira profissional da qual me orgulho. Depois de ter concluido os estudos na EPRAL, frequentei um curso de especializacao em Lisboa, na EDIT, como Mobile UI & UX Design, ou seja, como especialista em desenhar interfaces para dispositivos e aplicacoes moveis."</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 16</div>
+            <img src="https://stg.odoo.did.decsis.cloud/web/image/1403/tiagoaranha-2-100x100.png" style="width:25%">
+            <div class="text">
+          Tiago Aranha concluiu o Curso Profissional de Tecnico de Restauracao na variante Cozinha/Pastelaria. Estagiou no Hotel Convento do Espinheiro, em Evora E NO GRUPO HOTELEIRO MAR d'Ar, onde teve oportunidade de trabalhar com os chefs Luis Mourao e Antonio Nobre. Integra a equipa responsavel por um novo estabelecimento na area da pastelaria na cidade de Evora. "A EPRAL abriu-me as portas para o mundo do trabalho, proporcionando-me experiencias em contexto de trabalho, os "estagios", como nos habitualmente nos referiamos a esses momentos. Foram importantes para uma melhor articulacao das aprendizagens."</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 16</div>
+            <img src="https://stg.odoo.did.decsis.cloud/web/image/1389/boieiro-1-100x100.png" style="width:25%">
+            <div class="text">
+          Luis Boeiro concluiu o Curso Profissional de Tecnico de Comunicacao/Marketing, Relacoes Publicas e Publicidade. Atualmente e tecnico de producao e impressao na Spreading Avertising. "Antes de mais quero deixar e meu agradecimento a EPRAL por me ter ajudado a entrar no mundo do trabalho. Foi bastante importante porque sempre me forneceu as ferramentas necessarias para a conclusao do meu curso e iniciar a minha carreira profissional da area da publicidade." "Durante esses tres anos que frequentei a EPRAL fiz bastantes amizades, desde os colegas de curso, ate aos funcionarios de toda a escola, o que fez com que esses tres anos passassem a correr. Durante esse tempo nunca me faltou nada, desde a motivacao nos momentos mais dificeis, ate as ferramentas de tabalho que a EPRAL poe a nosso dispor, que sao excelentes." "O estagio curricular foi bastante importante para mim, pois consegui um contrato com a empresa, onde permaneci durante cerca de 6 anos e me permitiu dar o salto a nivel profissional. So me resta mais uma vez deixar o meu agradecimentos e as maiores felicidades a EPRAL. Obrigado!"</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 16</div>
+            <img src="https://stg.odoo.did.decsis.cloud/web/image/1396/josematos-1-100x100.png" style="width:25%">
+            <div class="text">
+          Joao Matos concluiu o Curso Profissional de Tecnico Auxiliar de Saude, uma oferta formativa pioneira desenvolvida na EPRAL. Atualmente trabalha no Hospital do Espirito Santo em Evora. "Em 2011 quando fui para o secundario nao estava com vontade de continuar a estudar porque tinha a sensacao de que quando chegasse aos 12o ano iria ficar em casa sem nada para fazer e nao me estava a agradar muito essa ideia. Entao decidi a via do Ensino Profissional". "As formacoes em contexto de trabalho ao longo do curso foram muito importantes para o meu percurso profissional porque durante esses pereodos, aprendi muitas coisas que foram beneficas para o meu dia-a-dia e tudo o que aprendi posso agradecer ao servico onde realizei os estagio."Uma semana depois de ter concluido o curso comecei a trabalhar na minha area de formacao."</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 16</div>
+            <img src="https://stg.odoo.did.decsis.cloud/web/image/1395/josechora-1-100x100.png" style="width:25%">
+            <div class="text">
+          Jose Chora concluiu o Curso Profissional de Tecnico de Construcao Civil e atualmente e empresario na area da construcao civil. "Na EPRAL, por comparacao com o ensino que frequentei anteriormente, senti maior interacao entre professores e alunos, e um acompanhamento mais presente. O facto de as aprendizagens serem mais direcionadas aos nossos interesses e as aulas mais praticas fazia com que a motivacao fosse tambem maior." "O estagio da-nos uma visao mais completa do nosso mundo de trabalho. Permitiu-me aplicar os conceitos teoricos e tecnicos que tinha aprendido, praticar e desenvolver as minhas competencias profissionais, mas tambem de relacionamento interpessoal, tao importantes na tarefa de coordenacao de equipas e atividades." "Durante os 2 estagios curriculares integrei uma empresa de referencia na regiao, onde fiquei depois a trabalhar durante cerca de dois anos. Durante esse tempo fiz tambem outras formacoes complementares na area e acabei por iniciar a minha propria atividade, que ainda hoje mantenho com sucesso - Medievora."</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 16</div>
+            <img src="https://stg.odoo.did.decsis.cloud/web/image/1401/sarafanha-100x100.png" style="width:25%">
+            <div class="text">
+          Sara Fanha concluiu o Curso Profissional de Tecnico de Apoio a Infancia na Coopberco em Evora. "Ao contrario do ensino regular, no ensino profissional aprende-se a fazer e nao so a ser e estar. No entanto profissional encontramos o nosso rumo, porque somos orientados a atingir objetos e a construir os nossos sonhos. Esta e a grande diferenca." "Neste sentido, a relacao formador e formando e uma relacao de entreajuda, confianca e passagem de testemunho, facilitando assim todo o percurso academico do formando. E assim se constroi a nossa escola, numa rede de apoio e suporte, ao crescimento de cada um, havendo espaco para a autonomia, para aprender a voar."</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 16</div>
+            <img src="https://stg.odoo.did.decsis.cloud/web/image/1387/1461154_698428420175387_2145728180_n-300x300.jpg" style="width:25%">
+            <div class="text">
+          Goncalo Queiros concluiu o Curso Profissional de Tecnico de Restauracao. "O que destaco mais na minha passagem pela EPRAL e o contato com outros profissionais no decorrer dos estagios que acaba por ser essencial para a integracao da area da Hotelaria/Restauracao. So sabemos que e aquilo que realmente gostamos, se estivermos la de facas em punho a executar as tarefas sob stres e a pressao que estao inerentes a profissao." "Apesar de nao ser imprescindivel em curso profissional para se chegar a grande Chef, sublinho que este tipo de formacao representa uma mais valia em termos de preparacao para o exercicio da profissao." "Para alem disso, existe sempre a possibilidade de integrar uma das empresas onde estagiamos. No meu caso, como ja fazia uns biscates acabei por ser procurado e integrei a cozinha da Bica do Sapato, em Lisboa, onde trabalhei com o Chef Fausto Airoldi." "Hoje tenho o meu restaurante, o Origens, no Centro Historico de Evora e olhando para tras, consigo ver tudo o que me foi possivel aprender ao longo de todo o meu percurso profissional, que teve inicio na EPRAL,"</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 16</div>
+            <img src="https://stg.odoo.did.decsis.cloud/web/image/1390/cristinafreixa-100x100.png" style="width:25%">
+            <div class="text">
+          Cristina Freixa frequentou o Curso Profissional de Tecnico de Restauracao. Atualmente e a Diretora Financeira de uma unidade hotelaria Ecorkhotel - Evora Suites & SPA. "Apos a conclusao do 9o ano de escolaridade optei pela vertente de Humanidades: o gosto pela lingua francesa falou mais alto. Acabaria por desistir por motivos pessoais, escolhendo a EPRAL para iniciar o meu percurso escolar/profissional." "Inicialmente tal como como outros formandos via a EPRAL como uma saida facil, so mais tarde percebi que poderia tirar partido do que a escola me estava a oferecer, independentemente da minha escolha no final do curso." "Com o decorrer do tempo, apercebi-me que podia ter um futuro promissor a minha frente, tracei objetivos e trabalhei para os atingir, ficando com a certeza que tinha feito a escolha acertada." "Apos conclusao do curso profissional com sucesso, decidi prosseguir estudos e conclui a licenciatura em Gestao Hoteleira. Algumas dificuldades sentidas ao longo da frequencia do curso, foram superadas com os conhecimentos e competencias adquiridas na EPRAL." </div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">8 / 16</div>
+            <img src="https://stg.odoo.did.decsis.cloud/web/image/1392/fragozo-100x100.png" style="width:25%">
+            <div class="text">
+          Jose Fragoso frequentou a EPRAL durante 3 anos (2012-2015) no Curso Profissional de Tecnico de Rececao. Atualmente e Rececionista no Evorahotel. "Foram 3 anos de muitas aprendizagens, nao apenas escolares mas aprendizagens que me fizeram crescer enquanto pessoa, amigo, filho e claro enquanto profissional. O staff desta instituicao (EPRAL) e espetacular: os professores estao sempre disponiveis e presentes como nossos amigos e familiares para aquilo que seja necessario, a administracao faz de tudo para que a escola esteja sempre organizada e que tenhamos sempre as melhores condicoes de aprendizagem, e o restante pessoal sempre com um sorriso na cara o que acaba por nos fazer sentir em casa." "No final do curso, fui contratado para a mesma empresa onde realizei os dois estagios curriculares. E onde ainda hoje, quase um ano depois, ainda trabalho. Estou bastante orgulhoso, mas reconheco que nunca nada disto teria sido possivel sem a ajuda da EPRAL que me abriu as portas do mundo profissional, tal como a muitos outros alunos."</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">9 / 16</div>
+            <img src="https://stg.odoo.did.decsis.cloud/web/image/1391/espada-100x100.png" style="width:25%">
+            <div class="text">
+          Miguel Espada concluiu o Curso Profissional de Tecnico de Gestao. Atualmente trabalha no Hospital da Misericordia em Evora. "A diferenca mais significativa entre a EPRAL e as escolas que anteriormente havia frequentado, foi sem duvida a ligacao mais proxima entre alunos e professores, existindo uma possiblidade de comunicacao muito maior e por conseguinte um acompanhamento mais esteito do nosso percurso escolar. Destaco como aspeto muito positivo e diferenciador deste tipo de endino a possibilidade de ingressar no mercado de trabalho pouco depois de terminar o curso profissional na EPRAL. Aquanto da realizacao do ultimo estagio curricular no Hospital da Misericordia de Evora, tive a oportinidade de passar pelas diferentes areas de trabalho o que representou uma mais valia para a minha formacao. Apos a conclusao do curso em 2009, tive uma experiencia profissional de curta duracao (3 meses) na Tyco e fui posteriormente convidado a trabalhar no Hospital da Misericordia de Evora, onde me encontro ate hoje em funcoes. Neste momento encontro-me no setor de Armazem/Logistica que e basicamente o coracao do hospital."</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">10 / 16</div>
+            <img src="https://stg.odoo.did.decsis.cloud/web/image/1388/belmiropinto-100x100.png" style="width:25%">
+            <div class="text">
+          Belmiro Pinto terminou o Curso Profissional de Tecnico de Restauracao em 1996. Atualmente e Diretor do Vila Gale Hotel em Evora. O seu percurso profissinal levou-o ao Brasil num projeto de grupo hoteleiro onde ainda hoje trabalha, exercendo diversos cargos de direcao nas unidades hoteleiras do grupo. Comecou a trabalhar na cadeia hoteleira onde realizou os seus momentos de formacao e contexto de trabalho. "A EPRAL destacava-se das "outras" escolas que tinha frequentado, pela estrutura da escola (salas de aula, equipamentos a disposicao para uma aprendizagem mais eficaz para os varios cursos ministrados na EPRAL), pela diversidade na oferta de Cursos Profissioanis para os Jovens, pela abrangencia dos Polos da EPRAL que estavam "espalhados" por varias localidades da regiao do Alentejo." "Destaco ainda os conteudos dos Cursos ministrados na EPRAL que procuram preparar os Jovens da melhor forma, tendo em conta a realidade professional existente na Regiao e no Pais." "O curso de Tecnico de Hotelaria Restauracao, Organizacao e controle que frequentei entre 1993-1996 na EPRAL, permitiu-me adquirir varios conhecimentos teoricos e praticos, que foram fundamentais no inicio do meu percurso profissional na area da Hotelaria/Turismo. Com a conclusao do Curso, tive a oportunidade de comecar a trabalhar de imediato no local onde realizei o meu ultimo estagio curricular do curso, dando inicio a um percurso profissional." </div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">11 / 16</div>
+            <img src="https://stg.odoo.did.decsis.cloud/web/image/1400/medina-100x100.jpg" style="width:25%">
+            <div class="text">
+          "Muitos parabens e votos de continuacao de excelente trabalho. Num momento de "Novas Oportunidades", em que pretendemos colocar a qualificacao dos portugueses como a prioridade nacional central para os proximos anos, contamos com o esforco e empenho da Fundacao Alentejo e da EPRAL para vencermos o desafio. Quer na formacao profissional de jovens mas tambem na formacao de adultos e ativos, pois todos somos essenciais a modernizacao e desenvolvimento so pais." Fernando Maciel Almeida Correia - Secretario de Estado do emprego e Formacao Profissional (22 março, 2007)</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">12 / 16</div>
+            <img src="https://stg.odoo.did.decsis.cloud/web/image/1398/marcalgrilo-100x100.jpg" style="width:25%">
+            <div class="text">
+          "Quando se visita uma escola que tem um Projeto, que tem uma lideranca e que possui um corpo docente estavel, verifica-se que o sucesso e possivel e ocorre tal como acontece com a EPRAL. Muitos parabens e muitas felicidades para todos os que estudam e trabalham nesta escola que devera constituir refercncia para o ensino profissional em Portugal." Eduardo Marcal Grilo - Ministro da Educacao (20 janeiro, 1997) </div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">13 / 16</div>
+            <img src="https://stg.odoo.did.decsis.cloud/web/image/1393/guterres-100x100.jpg" style="width:25%">
+            <div class="text">
+          "Uma saudacao fraterna de grande apreco pala PERAL, por todos os que a criaram e desenvolveram e com o desejo das maiores felicidades para os adultos, professores e restantes trabalhadores." Antonio Guterres - Primeiro Ministro (7 maio, 1999)</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">14 / 16</div>
+            <img src="https://stg.odoo.did.decsis.cloud/web/image/1394/Jo%C3%A3o-Costa-100x100.jpg" style="width:25%">
+            <div class="text">
+          Foi um enorme gosto vir conhecer a EPRAL e a forma como se esta a desenvolver o Projeto de Autonomia e Flexibilidade Curricular. Pude ver projetos integradores, metodologias ativas, mas sobretudo alunos empenhados e motivados e uma excelente equipa de profissionais! Parabens pelo vosso trabalho e pelo exemplo! Prof. Doutor Joao Miguel Marques da Costa, Secretario de Estado da Educacao, visita a EPRAL no ambito do "Projeto de Autonomia e Flexibilidade Curricular", Evora 4 de dezembro de 2017 </div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">15 / 16</div>
+            <img src="https://stg.odoo.did.decsis.cloud/web/image/1402/sec_estado_ciencia-maria-rollo-100x100.png" style="width:25%">
+            <div class="text">
+          "Hoje em dia as escolas profissionais ocupam um espaco incrivel, onde muitos jovens aprendem, numa relacao muito estreita com a sociedade e com o tecido empresarial. Isso tem que ser reconhecido e calorizado."   Visita a EPRAL da Senhora Secretaria de Estado de Ciencia, Tecnologia e Ensino Superior, Prof. Doutora Maria Fernanda Rollo, 8 fevereiro 2017</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">16 / 16</div>
+            <img src="https://stg.odoo.did.decsis.cloud/web/image/1399/M%C3%A1rio-Centeno-100x100.jpg" style="width:25%">
+            <div class="text">
+          "Neste dia em que o Governo "voltou a Escola", tive a enorme felicidade de conhecer um projeto educativo de enorme excelencia. O Pais, atraves do governo, reconhece a importancia da Educacao e destes exemplos de sucesso. A Educacao e um investimento e hoje isso e reconhecido" Muito obrigado e muitas felicidades"   Prof. Doutor Mario Centeno. Visita a EPRAL no ambito da iniciativa "O Governo volta a Escola" - Abertura Oficial do Ano Letivo 2016/2017 - 14 setembro 2016 </div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+            <span class="dot" onclick="currentSlide(7)"></span> 
+            <span class="dot" onclick="currentSlide(8)"></span> 
+            <span class="dot" onclick="currentSlide(9)"></span> 
+            <span class="dot" onclick="currentSlide(10)"></span> 
+            <span class="dot" onclick="currentSlide(11)"></span> 
+            <span class="dot" onclick="currentSlide(12)"></span> 
+            <span class="dot" onclick="currentSlide(13)"></span> 
+            <span class="dot" onclick="currentSlide(14)"></span> 
+            <span class="dot" onclick="currentSlide(15)"></span>
+            <span class="dot" onclick="currentSlide(16)"></span>
+            <span class="dot" onclick="currentSlide(17)"></span>
+          </div>
+
+          <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+          </script>  
+          <br>
+       </section>
+    </div>
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!-- / content body -->
+  </div>
+</div>
+</body>
+</html>

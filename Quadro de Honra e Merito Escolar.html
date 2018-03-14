@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Epral</title>
+<meta charset="iso-8859-1">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Procurar:</legend>
+        <input type="text" value="Procurar no nosso WebSite&hellip;" onFocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;">
+        <input type="submit" id="sf_submit" value="ENTER">
+      </fieldset>
+    </form>
+      <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+        }
+
+        .main {
+            max-width: 100px;
+        }
+
+        h3 {
+            font-size: 16px;
+            color: orangered;
+            text-align: left;
+            word-break: break-all;
+        }                           
+
+        h6 {
+          font-size: 16px;
+          text-align: left;
+          font-weight: normal;
+          }
+
+        .row {
+            margin: 20px 30px;
+        }
+
+        .row,
+        .row > .column {
+            padding: 0px;
+        }
+
+        .column {
+            float: left;
+            width: 25%;
+            padding: 0px;
+            height: 500px;
+        }
+             
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .content {
+            background-color: white;
+            padding: 10px;
+        }
+
+        @media (max-width: 600px) {
+        .column {
+            width: 50%;
+        }
+        }
+        @media (max-width: 200px) {
+        .column {
+            width: 100%;
+        }              
+        }                
+                         
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: darkorange;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;    
+            border: none;
+            outline: none;
+            color: darkorange;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: black;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: orange;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            background-color: lightgray;
+        }
+
+        .dropdown-content a:hover {
+            background-color: gray;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        </style>
+        </head>
+        <body>
+
+        <div class="navbar">
+          <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/HOME%20PAGE.html">Pagina Inicial</a>
+          <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Sobre%20nos.html#">Sobre Nos</a>
+           <div class="dropdown">
+            <button class="dropbtn">Escola
+              <i class="drop drop-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Diretor.html">O Diretor</a>
+              <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Entidade%20Proprietaria.html">Entidade Proprietaria</a>
+              <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Quadro%20de%20Honra%20e%20Merito%20Escolar.html">Quadro de Honra e Merito Escolar</a>
+              <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Cursos%20em%20Funcionamento.html">Cursos em Funcionamento</a> 
+              <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Corpo%20Docente.html">Corpo Docente</a>
+              <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Colaboradores.html">Colaboradores</a>
+              <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Mecanismos%20de%20Orienta%C3%A7%C3%A3o%20e%20Apoio%20Tutorial.html">Mecanismos de Orientacao e Apoio Tutorial</a>
+              <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Documentos%20Relevantes.html">Documentos Relevantes</a>
+              <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Portal%20EPRAL.html">Portal EPRAL</a>
+            </div>
+          </div>              
+          <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Documentos%20Estruturantes.html">Documentos Estruturantes</a>
+          <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Galeria%20de%20Fotos.html">Galeria</a>
+          <div class="dropdown">
+            <button class="dropbtn">Oferta Formativa 17/18 
+              <i class="drop drop-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Cursos%2020172018.html">Cursos 17/18</a>
+              <a href="file:///C:/Users/black/OneDrive/%C3%81rea%20de%20Trabalho/Basic%2090%20Free%20HTML5%20Template%20from%20OS%20Templates/basic-90/Condi%C3%A7%C3%B5es%20da%20Candidatura.html">Condicoes da Candidatura</a>
+            </div>
+          </div>
+           <a href="http://localhost:2015">Contactos</a> 
+        </div> 
+  </header>
+</div>
+<!-- content -->
+<div class="">
+  <div id="container" class="clear">
+    <!-- main content -->
+    <div id="intro">
+      <section class="clear">
+        <!-- article 1 -->
+        <article class>
+          <h1>Quadro de Honra e Merito Escolar</h1>
+        </article>
+        <!-- article 2 -->
+        <article class="">                                                 
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="https://stg.odoo.did.decsis.cloud/web/image/1346/honra1.jpg" alt="Mountains" style="width:100%">
+      <h6><strong>2013-2016<strong></h6>
+      <h3>Joao Miguel Calisto</h3>
+      <h6>Curso Profissional: <strong>Tecnico de Multimedia</strong></h6>
+      <h6>Polo: <strong>Evora</strong></h6>
+      <h6>Classificacao Final de Curso</h6><h3>19 Valores</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://stg.odoo.did.decsis.cloud/web/image/1347/honra1%20(2).jpg" alt="Lights" style="width:100%">
+      <h6><strong>2012-2015<strong></h6>
+      <h3>Victor Sampaio Firmino</h3>
+      <h6>Curso Profissional: <strong>Tecnico de Rececao</strong></h6>
+      <h6>Polo: <strong>Evora</strong></h6>
+      <h6>Classificacao Final de Curso</h6><h3>18 Valores</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://stg.odoo.did.decsis.cloud/web/image/1348/honra2.jpg" alt="Nature" style="width:100%">
+      <h6><strong>2011-2014<strong></h6>
+      <h3>Joana Sofia MOnteiro</h3>
+      <h6>Curso Profissional: <strong>Tecnico de Multimedia</strong></h6>
+      <h6>Polo: <strong>Evora</strong></h6>
+      <h6>Classificacao Final de Curso</h6><h3>18 Valores</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+        <img src="https://stg.odoo.did.decsis.cloud/web/image/1349/honra4.jpg" alt="Mountains" style="width:100%">
+          <h6><strong>2010-2013<strong></h6>
+          <h3>Ana Dias Pio</h3>
+          <h6>Curso Profissional: <strong>Tecnico de Apoio a Infancia</strong></h6>
+          <h6>Polo: <strong>Evora</strong></h6>
+          <h6>Classificacao Final de Curso</h6><h3>19 Valores</h3>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="https://stg.odoo.did.decsis.cloud/web/image/1350/honra3.jpg" alt="Mountains" style="width:100%">
+          <h6><strong>2009-2012<strong></h6>
+          <h3>Andreia Alexandra da Cruz</h3>
+          <h6>Curso Profissional: <strong>Tecnico de Organizacao de Eventos</strong></h6>
+          <h6>Polo: <strong>Evora</strong></h6>
+          <h6>Classificacao Final de Curso</h6><h3>18 Valores</h3>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="https://stg.odoo.did.decsis.cloud/web/image/1351/honra3%20(2).jpg" alt="Lights" style="width:100%">
+          <h6><strong>2008-2011<strong></h6>
+          <h3>Claudia Maria Afonso</h3>
+          <h6>Curso Profissional: <strong>Tecnico de Turismo</strong></h6>
+          <h6>Polo: <strong>Evora</strong></h6>
+          <h6>Classificacao Final de Curso</h6><h3>19 Valores</h3>
+          <h6></h6>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="https://stg.odoo.did.decsis.cloud/web/image/1352/honra4%20(3).jpg" alt="Nature" style="width:100%">
+          <h6><strong>2007-2010<strong></h6>
+          <h3>Ana Isabel Costa</h3>
+          <h6>Curso Profissional: <strong>Tecnico de Auxiliar de Infancia</strong></h6>
+          <h6>Polo: <strong>Evora</strong></h6>
+          <h6>Classificacao Final de Curso</h6><h3>18 Valores</h3>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="https://stg.odoo.did.decsis.cloud/web/image/1353/honra4%20(2).jpg" alt="Mountains" style="width:100%">
+          <h6><strong>2006-2009<strong></h6>
+          <h3>Sabrina Pereira de Almeida</h3>
+          <h6>Curso Profissional: <strong>Tecnico de Multimedia</strong></h6>
+          <h6>Polo: <strong>Evora</strong></h6>
+          <h6>Classificacao Final de Curso</h6><h3>19 Valores</h3>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="https://stg.odoo.did.decsis.cloud/web/image/1354/honra5.png" alt="Mountains" style="width:100%">
+          <h6><strong>2005-2008<strong></h6>
+          <h3>Monica Sofia Rodrigues</h3>
+          <h6>Curso Profissional: <strong>Tecnico de Auxiliar de Infancia</strong></h6>
+          <h6>Polo: <strong>Elvas</strong></h6>
+          <h6>Classificacao Final de Curso</h6><h3>18 Valores</h3>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="https://stg.odoo.did.decsis.cloud/web/image/1357/honra6.png" alt="Nature" style="width:100%">
+          <h6><strong>2004-2007<strong></h6>
+          <h3>Joao Carlos da Silva</h3>
+          <h6>Curso Profissional: <strong>Tecnico de Eletronica Industrial e Automacao<strong></h6>
+          <h6>Polo: <strong>Evora</strong></h6>
+          <h6>Classificacao Final de Curso</h6><h3>18 Valores</h3>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="https://stg.odoo.did.decsis.cloud/web/image/1355/honra5%20(2).png" alt="Lights" style="width:100%">
+          <h6><strong>2003-2006<strong></h6>
+          <h3>Sonia Alexandra Godinho</h3>
+          <h6>Curso Profissional: <strong>Tecnico de Multimedia</strong></h6>
+          <h6>Polo: <strong>Estremoz</strong></h6>
+          <h6>Classificacao Final de Curso</h6><h3>18 Valores</h3>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="https://stg.odoo.did.decsis.cloud/web/image/1356/honra6%20(2).png" alt="Mountains" style="width:100%">
+          <h6><strong>2002-2005<strong></h6>
+          <h3>Patricia de Jesus Pardal</h3>
+          <h6>Curso Profissional: <strong>Tecnico de Servicos Juridicos</strong></h6>
+          <h6>Polo: <strong>Elvas/strong></h6>
+          <h6>Classificacao Final de Curso</h6><h3>18 Valores</h3>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="https://stg.odoo.did.decsis.cloud/web/image/1359/honra7.png" alt="Mountains" style="width:100%">
+          <h6><strong>2001-2004<strong></h6>
+          <h3>Isaac Manuel Managil</h3>
+          <h6>Curso Profissional: <strong>Tecnico de Servicos Juridicos</strong></h6>
+          <h6>Polo: <strong>Evora</strong></h6>
+          <h6>Classificacao Final de Curso</h6><h3>18 Valores</h3>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="https://stg.odoo.did.decsis.cloud/web/image/1360/honra8%20(2).png" alt="Nature" style="width:100%">
+          <h6><strong>2000-2003<strong></h6>
+          <h3>Andreia Sofia Vestea</h3>
+          <h6>Curso Profissional: <strong>Tecnico de Gestao/PME e Cooperativas</strong></h6>
+          <h6>Polo: <strong>Vila Vicosa</strong></h6>
+          <h6>Classificacao Final de Curso</h6><h3>18 Valores</h3>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="https://stg.odoo.did.decsis.cloud/web/image/1358/honra7%20(2).png" alt="Lights" style="width:100%">
+          <h6><strong>1999-2002<strong></h6>
+          <h3>Maria Margarida Maltinha</h3>
+          <h6>Curso Profissional: <strong>Tecnico de Projetista de Mobiliario</strong></h6>
+          <h6>Polo: <strong>Estremoz</strong></h6>
+          <h6>Classificacao Final de Curso</h6><h3>19 Valores</h3>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="https://stg.odoo.did.decsis.cloud/web/image/1361/honra8.png" alt="Mountains" style="width:100%">
+          <h6><strong>1998-2001<strong></h6>
+          <h3>Ana Paula Ventura</h3>
+          <h6>Curso Profissional: <strong>Tecnico de Construcao Civil/Desenho</strong></h6>
+          <h6>Polo: <strong>Estremoz</strong></h6>
+          <h6>Classificacao Final de Curso</h6><h3>18 Valores</h3>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="https://stg.odoo.did.decsis.cloud/web/image/1363/honra9.png" alt="Mountains" style="width:100%">
+          <h6><strong>1997-2000<strong></h6>
+          <h3>Paulo Jose Aleixo</h3>
+          <h6>Curso Profissional: <strong>Tecnico de Construcao Civil/Desenho</strong></h6>
+          <h6>Polo: <strong>Estremoz</strong></h6>
+          <h6>Classificacao Final de Curso</h6><h3>18 Valores</h3>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="https://stg.odoo.did.decsis.cloud/web/image/1362/honra9%20(2).png" alt="Lights" style="width:100%">
+          <h6><strong>1996-1999<strong></h6>
+          <h3>Sandra Cristina Serol</h3>
+          <h6>Curso Profissional: <strong>Tecnico de Gestao/Especificacoes</strong></h6>
+          <h6>Polo: <strong>Vila Vicosa/strong></h6>
+          <h6>Classificacao Final de Curso</h6><h3>18 Valores</h3>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="https://stg.odoo.did.decsis.cloud/web/image/1365/honra10.png" alt="Nature" style="width:100%">
+          <h6><strong>1995-1998<strong></h6>
+          <h3>Jose Fernando Botas</h3>
+          <h6>Curso Profissional: <strong>Tecnico de Contabilidade</strong></h6>
+          <h6>Polo: <strong>Campo Maior</strong></h6>
+          <h6>Classificacao Final de Curso</h6><h3>18 Valores</h3>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="https://stg.odoo.did.decsis.cloud/web/image/1364/honra10%20(3).png" alt="Mountains" style="width:100%">
+          <h6><strong>1994-1997<strong></h6>
+          <h3>Idalia de Lurdes Maltez</h3>
+          <h6>Curso Profissional: <strong>Tecnico de Informatica/Gestao</strong></h6>
+          <h6>Polo: <strong>Estremoz</strong></h6>
+          <h6>Classificacao Final de Curso</h6><h3>18 Valores</h3>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="https://stg.odoo.did.decsis.cloud/web/image/1367/honra11.png" alt="Mountains" style="width:100%">
+          <h6><strong>1993-1996<strong></h6>
+          <h3>Sonia Isabel Costa</h3>
+          <h6>Curso Profissional: <strong>Tecnico de Multimedia</strong></h6>
+          <h6>Polo: <strong>Evora</strong></h6>
+          <h6>Classificacao Final de Curso</h6><h3>18 Valores</h3>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="https://stg.odoo.did.decsis.cloud/web/image/1366/honra11%20(2).png" alt="Lights" style="width:100%">
+          <h6><strong>1992-1995<strong></h6>
+          <h3>Jose Paulo Barbosa</h3>
+          <h6>Curso Profissional: <strong>Tecnico de Turismo Ambiental e Rural</strong></h6>
+          <h6>Polo: <strong>Monforte</strong></h6>
+          <h6>Classificacao Final de Curso</h6><h3>18 Valores</h3>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="https://stg.odoo.did.decsis.cloud/web/image/1368/honra12%20(2).png" alt="Nature" style="width:100%">
+          <h6><strong>1991-1994<strong></h6>
+          <h3>Berta Fialho Fontelonga</h3>
+          <h6>Curso Profissional: <strong>Tecnico de Multimedia</strong></h6>
+          <h6>Polo: <strong>Evora</strong></h6>
+          <h6>Classificacao Final de Curso</h6><h3>18 Valores</h3>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="https://stg.odoo.did.decsis.cloud/web/image/1369/honra12.png" alt="Mountains" style="width:100%">
+          <h6><strong>1990-993<strong></h6>
+          <h3>Maria Jose Ricardo</h3>
+          <h6>Curso Profissional: <strong>Tecnico de Informacao - BAD/Biblioteca e Servicos de Documentacao</strong></h6>
+          <h6>Polo: <strong>Vila Vicosa</strong></h6>
+          <h6>Classificacao Final de Curso</h6><h3>17 Valores</h3>
+        </div>
+      </div>
+</div>
+</article>
+      </section>
+    </div>
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!-- / content body -->
+  </div>
+</div>
+</body>
+</html>
