@@ -220,10 +220,14 @@
             overflow: hidden;
             background-color: #333;
             font-family: Arial, Helvetica, sans-serif;
+            position: fixed;
+            top: 0;
+            width: 100%;
         }
 
         .navbar a {
             float: left;
+            display: block;
             font-size: 16px;
             color: darkorange;
             text-align: center;
@@ -250,6 +254,13 @@
 
         .navbar a:hover, .dropdown:hover .dropbtn {
             background-color: black;
+            color: darkorange;
+        }
+        
+        .main {
+        padding: 16px;
+        margin-top: 30px;
+        height: 1500px;
         }
 
         .dropdown-content {
