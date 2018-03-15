@@ -24,8 +24,6 @@
                            
             body {
                 margin: 0;
-                background-color: #f1f1f1;
-        font-family: Arial, Helvetica, sans-serif;
             }
                                                                     
         .mySlides {display: none}
@@ -219,22 +217,18 @@
             }                                    
                                                  
         .navbar {
-          background-color: #333;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        display:block;
-        transition: top 0.3s;
-      }
+            overflow: hidden;
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
         .navbar a {
             float: left;
-            display: block;
+            font-size: 16px;
             color: darkorange;
             text-align: center;
-            padding: 15px;
+            padding: 14px 16px;
             text-decoration: none;
-            font-size: 17px;
         }
 
         .dropdown {
@@ -256,7 +250,6 @@
 
         .navbar a:hover, .dropdown:hover .dropbtn {
             background-color: black;
-            color: darkorange;
         }
 
         .dropdown-content {
@@ -578,18 +571,6 @@
             dots[slideIndex-1].className += " active";
           }
           </script>  
-          <script>
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-</script>
           <br>
        </section>
     </div>
