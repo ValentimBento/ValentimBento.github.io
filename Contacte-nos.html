@@ -26,53 +26,6 @@
             box-sizing: border-box;
         }
 
-        input[type=text], select, textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            margin-top: 6px;
-            margin-bottom: 16px;
-            resize: vertical;
-        }
-
-        input[type=submit] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            cursor: pointer;
-        }
-
-        input[type=submit]:hover {
-            background-color: #45a049;
-        }
-
-        .container {
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 10px;
-        }
-
-        .column {
-            float: left;
-            width: 50%;
-            margin-top: 6px;
-            padding: 20px;
-        }
-
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        @media screen and (max-width: 600px) {
-            .column, input[type=submit] {
-                width: 100%;
-                margin-top: 0;
-            }
-        }
-
         .fa {
           padding: 14px;
           font-size: 24px;
@@ -314,17 +267,6 @@
     </div>
   </div>
 </div>
-<script>
-function myMap() {
-  var myCenter = new google.maps.LatLng(38.565549,-7.911551,157);
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {center: myCenter, zoom: 18};
-  var map = new google.maps.Map(mapCanvas, mapOptions);
-  var marker = new google.maps.Marker({position:myCenter});
-  marker.setMap(map);
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 <div>
   <a href="https://www.facebook.com/epral.evora" class="fa fa-facebook"></a>
   <a href="https://www.youtube.com/user/EPRALGeracaoCOOL" class="fa fa-youtube"></a>
