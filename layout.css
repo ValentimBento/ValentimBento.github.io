@@ -41,7 +41,7 @@ div.wrapper{float: left; display:block; width:100%;padding-bottom: 0;}
 
 .row1, .row1 a{color:#C0BAB6; background-color:#333333;}
 .row2{text-align: center;}
-.row2 a{color:black;}
+.row2 a{color:black;margin-left: 35px; margin-right: 40px;}
 .row3, .row3 a{text-align: center; font-weight: bold; color:#FF9900; background-color:white;}
 .row4 {font-size: 20px; text-align: left; text-transform: capitalize;}
 
