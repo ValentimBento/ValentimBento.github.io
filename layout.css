@@ -95,7 +95,7 @@ input, textarea, select{cursor: pointer; font-size:15px; font-family:Georgia,"Ti
 /*----------------------------------------------Content Area-------------------------------------*/
 
 #container{padding: 10px 0;}
-#container section{display:block; margin-top: 50px; margin-bottom:50px; padding:0;}
+#container section{display:block; margin-top: 30px; margin-bottom:50px; padding:0;}
 #container .last{margin:50px;}
 #container .more{text-align:center;} 
 
