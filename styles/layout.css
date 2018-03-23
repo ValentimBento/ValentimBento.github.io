@@ -115,7 +115,7 @@ input, textarea, select{cursor: pointer; font-size:15px; font-family:Georgia,"Ti
 #container #intro section{width:100%;}
 #container #intro section article{margin-top: -50px; padding-top: 50px;}
 #container #intro section article h2{text-align: center; margin-bottom:15px;}
-#container #intro section article p{text-align:left; font-size: 20px}
+#container #intro section article p{text-align:left;}
 #container #intro section article figure ul{display:block; width:100%; margin:0; padding:0; list-style:none;}
 #container #intro section article figure ul li{display:inline-block; float:inherit; margin:0 25px 0 0;}
 #container #intro section article figure ul li.last{margin:0;}
